@@ -1,0 +1,14 @@
+{# templates/sio/hello.html.twig #}
+{% extends 'base.html.twig' %}
+
+{% block title %}Devine{% endblock %}
+
+{% block body %}
+	<h1>Hello world !</h1>
+	<p>Vos langages préférenciels sont : {% for i in lang %} {{ i }}, {% endfor %} et votre IP {{ ip }} !</p>
+    {# add flash : #}
+	{# {% for flashMessage in app.flashes('hello') %}
+	<div class="alert">
+  		<span class="closebtn" onclick="this.parentElement.style.display='none';">X</span> {{ flashMessage }}</div>
+	{% endfor %} #}
+{% endblock %}

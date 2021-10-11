@@ -1,3 +1,15 @@
 #index:
 #    path: /
 #    controller: App\Controller\DefaultController::index
+
+lucky:
+  path: /lucky/number
+  controller: App\Controller\LuckyController::numberAction
+
+hello:
+    path: /
+    controller: App\Controller\SioController::indexAction
+
+helloName:
+    path: /hello/{nameInput}
+    controller: App\Controller\SioController::helloAction

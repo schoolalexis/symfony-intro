@@ -1,0 +1,16 @@
+{# templates/sio/helloWithName.html.twig #} 
+{% extends 'base.html.twig' %} 
+
+{% block title %}Hello{% endblock %} 
+
+{% block body %}
+
+{% if lastname == null %}
+<p> Hello <span style="font-weight: bold;">{{ name }}</span></p>
+{% endif %}
+
+{% if lastname != null %}
+<p> Hello <span style="font-weight: bold;">{{ name }}</span> - ( {{name}} {{lastname|upper}} )</p>  
+{% endif %}
+
+{% endblock %}
