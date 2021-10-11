@@ -13,3 +13,9 @@ Prérequis :
 ## Projet
 
 Ce projet a pour but de faire découvrir le framework Symfony et le model MVC aux étudiants développeurs ayant eu un premier contact avec le développement web.
+
+### Sommaire :
+- **Etape 01** : _Notion de Vue/Contrôleur_
+
+
+

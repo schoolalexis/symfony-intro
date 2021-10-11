@@ -6,18 +6,19 @@ namespace App\Controller;
 
 use Symfony\Component\HttpFoundation\Response;  
 use Symfony\Component\Routing\Annotation\Route;
+use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 
-class LuckyController 
+class LuckyController extends AbstractController
 {
   /** 
   * @Route("/lucky/number", methods={"GET"}, name="lucky_step_one") 
   */
-  public function number() 
+  public function numberAction() 
   {
     $number = mt_rand(0, 100);
 
-    return new Response( 
-      '<html><body>Lucky number: '.$number.'</body></html>'
-    );
+    return $this->render('lucky/number.html.twig', array(
+        'number' => $number,
+    ));
   }
 } 
